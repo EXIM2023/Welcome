@@ -24,6 +24,7 @@ body {
 
 #bg {
     position: relative;
+
 }
 #bg::before {
     content: "";
@@ -33,17 +34,17 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
+    background-image: url(img/under.png),url(img/tree_left.png),url(img/tree_right.png),url(img/cloud_left.png),url(img/cloud_right.png);
+    background-repeat: no-repeat;
     z-index: -1;
 }
 .fixedbox {
     background-color: rgba(255, 255, 255, 0.1);
 }
 @media screen and (max-width:425px) {
-    #bg {
-        background-image: url(img/under.png),url(img/tree_left.png),url(img/tree_right.png),url(img/cloud_left.png),url(img/cloud_right.png);
+    #bg::before{
         background-size: 150% auto,50% auto,50% auto,40% auto,50% auto;;
         background-position: bottom,-50% 80%,150% 80%,-10% 15%,130% 10%;;
-        background-repeat: no-repeat;
 
     }
     p {
@@ -57,12 +58,9 @@ body {
     }
 }
 @media screen and (min-width:425px) and ( max-width:768px) {
-    #bg {
-        background-image: url(img/under.png),url(img/tree_left.png),url(img/tree_right.png),url(img/cloud_left.png),url(img/cloud_right.png);
+    #bg::before{
         background-size: 150% 20%, 30% auto, 30% auto, 40% auto, 50% auto;
         background-position: bottom, -20% 75%, 120% 75%, -10% 15%, 130% 10%;
-        background-repeat: no-repeat;
-        background-attachment: fixed; 
 
     }
     p {
@@ -76,12 +74,9 @@ body {
     }
 }
 @media screen and (min-width:768px) {
-    #bg {
-        background-image: url(img/under.png),url(img/tree_left.png),url(img/tree_right.png),url(img/cloud_left.png),url(img/cloud_right.png);
+    #bg::before {
         background-size: 150% 20%, 30% auto, 30% auto, 40% auto, 50% auto;
         background-position: bottom, -20% 75%, 120% 75%, -10% 15%, 130% 10%;
-        background-repeat: no-repeat;
-        background-attachment: fixed; 
     }
     p {
         font-size: 26px;
@@ -93,6 +88,11 @@ body {
         font-size: 35px;
     }
 }
+
+
+
+
+
 header {
     max-height: 100vh;
     height: 100vh;
