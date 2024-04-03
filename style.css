@@ -18,9 +18,25 @@ h1 {
 }
 
 body {
-        font-family: 'PixelMplus'; /* 好みのフォント名を指定します。フォントが複数ある場合はカンマ区切りで列挙します */
+    font-family: 'PixelMplus'; /* 好みのフォント名を指定します。フォントが複数ある場合はカンマ区切りで列挙します */
     background-color: skyblue;
+}
 
+#bg {
+    position: relative;
+}
+#bg::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+.fixedbox {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 @media screen and (max-width:425px) {
     #bg {
@@ -28,11 +44,7 @@ body {
         background-size: 150% auto,50% auto,50% auto,40% auto,50% auto;;
         background-position: bottom,-50% 80%,150% 80%,-10% 15%,130% 10%;;
         background-repeat: no-repeat;
-        background-attachment: fixed; 
-        position: fixed;
-        z-index: -1;
-        width: 100vw;
-        height: 100vh;
+
     }
     p {
         font-size: 16px;
@@ -51,10 +63,7 @@ body {
         background-position: bottom, -20% 75%, 120% 75%, -10% 15%, 130% 10%;
         background-repeat: no-repeat;
         background-attachment: fixed; 
-        position: fixed;
-        z-index: -1;
-        width: 100vw;
-        height: 100vh;
+
     }
     p {
         font-size: 21px;
@@ -73,11 +82,6 @@ body {
         background-position: bottom, -20% 75%, 120% 75%, -10% 15%, 130% 10%;
         background-repeat: no-repeat;
         background-attachment: fixed; 
-        position: fixed;
-
-        z-index: -1;
-        width: 100vw;
-        height: 100vh;
     }
     p {
         font-size: 26px;
