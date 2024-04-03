@@ -29,6 +29,12 @@ body {
         background-position: bottom,-50% 80%,150% 80%,-10% 15%,130% 10%;;
         background-repeat: no-repeat;
         background-attachment: fixed; 
+        position: fixed;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
     }
     p {
         font-size: 16px;
@@ -47,6 +53,12 @@ body {
         background-position: bottom, -20% 75%, 120% 75%, -10% 15%, 130% 10%;
         background-repeat: no-repeat;
         background-attachment: fixed; 
+        position: fixed;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
     }
     p {
         font-size: 21px;
@@ -65,6 +77,12 @@ body {
         background-position: bottom, -20% 75%, 120% 75%, -10% 15%, 130% 10%;
         background-repeat: no-repeat;
         background-attachment: fixed; 
+        position: fixed;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
     }
     p {
         font-size: 26px;
