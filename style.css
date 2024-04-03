@@ -6,18 +6,23 @@
 }
 p,h1 {
     color: whitesmoke;
+    text-shadow: 1px 2px 3px #808080; 
+    line-height: 40px
+}
+h1 {
+    margin-bottom: 4vh;
 }
 @font-face {
-    font-family: 'misaki_gothic'; /* フォントファミリー名 */
-    src: url('font/misaki_gothic.ttf') format('truetype'); /* フォントファイルのパスと形式 */
+    font-family: 'PixelMplus'; /* フォントファミリー名 */
+    src: url('font/PixelMplus-20130602/PixelMplus12-Regular.ttf') format('truetype'); /* フォントファイルのパスと形式 */
 }
 
 body {
-        font-family: 'misaki_gothic'; /* 好みのフォント名を指定します。フォントが複数ある場合はカンマ区切りで列挙します */
+        font-family: 'PixelMplus'; /* 好みのフォント名を指定します。フォントが複数ある場合はカンマ区切りで列挙します */
     background-color: skyblue;
 
 }
-@media screen and (min-width:320px) and (max-width:425px) {
+@media screen and (max-width:425px) {
     #bg {
         background-image: url(img/under.png),url(img/tree_left.png),url(img/tree_right.png),url(img/cloud_left.png),url(img/cloud_right.png);
         background-size: 150% auto,50% auto,50% auto,40% auto,50% auto;;
@@ -26,7 +31,13 @@ body {
         background-attachment: fixed; 
     }
     p {
-        font-size: 35px;
+        font-size: 16px;
+    }
+    li {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 25px;
     }
 }
 @media screen and (min-width:425px) and ( max-width:768px) {
@@ -38,13 +49,31 @@ body {
         background-attachment: fixed; 
     }
     p {
-        font-size: 25px;
-        line-height: 40px;
-        -webkit-text-stroke:0.5px black ;
-        text-shadow: 1px 2px 3px #808080; 
+        font-size: 21px;
+    }
+    li {
+        font-size: 20px;
     }
     h1 {
-        font-size: 40px;
+        font-size: 30px;
+    }
+}
+@media screen and (min-width:768px) {
+    #bg {
+        background-image: url(img/under.png),url(img/tree_left.png),url(img/tree_right.png),url(img/cloud_left.png),url(img/cloud_right.png);
+        background-size: 150% 20%, 30% auto, 30% auto, 40% auto, 50% auto;
+        background-position: bottom, -20% 75%, 120% 75%, -10% 15%, 130% 10%;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+    }
+    p {
+        font-size: 26px;
+    }
+    li {
+        font-size: 25px;
+    }
+    h1 {
+        font-size: 35px;
     }
 }
 header {
@@ -57,14 +86,10 @@ header {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-}
-header nav {
-    background-color: gray;
-    padding: 3% 5%;
+    gap: 3%;
 }
 header ul {
     text-decoration: none;
-    border: solid 1px white;
     width: 100%;
 }
 header ul li {
@@ -75,10 +100,24 @@ header ul li a {
     color: black;
     text-decoration: none;
 }
+#logo {
+    width: 60%;
+    height: auto;
+}
+#go {
+    width: 30%;
+    height: auto;
+}
+#heart {
+    width: 30%;
+    height: auto;
+}
+
+
 section {
     max-height: 100vh;
     height: 100vh;
     width: 100vw;
-    padding: 0 7vw;  
+    padding: 5vh 7vw 0 7vw;  
     box-sizing: border-box;
 }
