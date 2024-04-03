@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+p,h1 {
+    color: whitesmoke;
+}
+@font-face {
+    font-family: 'misaki_gothic'; /* フォントファミリー名 */
+    src: url('font/misaki_gothic.ttf') format('truetype'); /* フォントファイルのパスと形式 */
+}
+
+body {
+        font-family: 'misaki_gothic'; /* 好みのフォント名を指定します。フォントが複数ある場合はカンマ区切りで列挙します */
+    background-color: skyblue;
+
+}
+@media screen and (min-width:320px) and (max-width:425px) {
+    #bg {
+        background-image: url(img/under.png),url(img/tree_left.png),url(img/tree_right.png),url(img/cloud_left.png),url(img/cloud_right.png);
+        background-size: 150% auto,50% auto,50% auto,40% auto,50% auto;;
+        background-position: bottom,-50% 80%,150% 80%,-10% 15%,130% 10%;;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+    }
+    p {
+        font-size: 35px;
+    }
+}
+@media screen and (min-width:425px) and ( max-width:768px) {
+    #bg {
+        background-image: url(img/under.png),url(img/tree_left.png),url(img/tree_right.png),url(img/cloud_left.png),url(img/cloud_right.png);
+        background-size: 150% 20%, 30% auto, 30% auto, 40% auto, 50% auto;
+        background-position: bottom, -20% 75%, 120% 75%, -10% 15%, 130% 10%;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+    }
+    p {
+        font-size: 25px;
+        line-height: 40px;
+        -webkit-text-stroke:0.5px black ;
+        text-shadow: 1px 2px 3px #808080; 
+    }
+    h1 {
+        font-size: 40px;
+    }
+}
+header {
+    max-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 7vw;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+header nav {
+    background-color: gray;
+    padding: 3% 5%;
+}
+header ul {
+    text-decoration: none;
+    border: solid 1px white;
+    width: 100%;
+}
+header ul li {
+    list-style: none;
+    width: 100%;
+}
+header ul li a {
+    color: black;
+    text-decoration: none;
+}
+section {
+    max-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 7vw;  
+    box-sizing: border-box;
+}
