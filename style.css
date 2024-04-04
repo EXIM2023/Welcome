@@ -138,6 +138,9 @@ section {
     width: 70%;
     height: auto;
 }
+.tittle {
+    font-size:18px
+}
 
 #Photo_Y,#Photo_H{
     width: 30%;
