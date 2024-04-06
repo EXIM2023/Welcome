@@ -7,7 +7,6 @@
 p,h1{
     color: whitesmoke;
     line-height: 50px;
-    text-shadow: 3px 3px black;
 }
 h1 {
     margin-bottom: 4vh;
@@ -54,6 +53,11 @@ body {
     .tittle {
         font-size: 10px;
     }
+    p,h1{
+        color: whitesmoke;
+        line-height: 50px;
+        text-shadow: 1px 1px black;
+    }
 }
 @media screen and (min-width:425px) and ( max-width:768px) {
     #bg::before{
@@ -69,6 +73,11 @@ body {
     .tittle {
         font-size: 15px;
     }
+    p,h1{
+        color: whitesmoke;
+        line-height: 50px;
+        text-shadow: 2px 2px black;
+    }
 }
 @media screen and (min-width:769px) {
     #bg::before {
@@ -83,6 +92,11 @@ body {
     }
     .tittle {
         font-size: 29px;
+    }
+    p,h1{
+        color: whitesmoke;
+        line-height: 50px;
+        text-shadow: 3px 3px black;
     }
 }
 
