@@ -119,13 +119,14 @@ header ul {
     text-decoration: none;
     width: 100%;
 }
-header ul li {
+header ul li,#member div a,#forms a{
     list-style: none;
     line-height: 150%;
     width: 100%;
     transition: transform 0.3s ease; 
+    text-decoration: none;
 }
-header ul li:hover {
+header ul li:hover, #member div a:hover, #forms a:hover{
     transform: translateY(-5px);
 }
 header ul li a {
@@ -166,6 +167,8 @@ section {
     width: 70%;
     height: auto;
 }
+
+
 
 
 #Photo_Y,#Photo_H{
